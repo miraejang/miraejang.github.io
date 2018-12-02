@@ -1,0 +1,32 @@
+/*reset*/
+body, div, h1, h2, h3, h4, h5, h6, ul, ol, li, p, dl, dt, dd {margin: 0; padding: 0;}
+header, main, footer, section, article, aside, nav {display: block;}
+
+h1, h2, h3, h4, h5, h6 {font-size: 18px; font-weight: normal;}
+li {list-style: none;}
+a {color: inherit; text-decoration: inherit;}
+em, i {font-style: normal; font-weight: inherit;}
+
+body {color: #777;}
+
+header {max-width: 1000px; margin: 20px auto; border-bottom: 3px solid #999;}
+header .home {display: block; float: left; width: 50px; height: 50px; background: pink;}
+header h1 {font-size: 50px; line-height: 100px; text-align: center;}
+
+.image_slide {position: relative; width: 940px; height: 600px; margin: 0 auto;}
+.image_slide::after {content: ''; clear: both; }
+.image_slide ul.slide li {position: absolutse; top: 0;}
+
+.image_slide ul.indicator {position: absolute; left: 0; bottom: 15px; width: 100%; text-align: center;}
+.image_slide ul.indicator li {display: inline-block; margin: 0 2px;}
+.image_slide ul.indicator li a {display: block; width: 10px; height: 10px; border: 3px solid #ffffff; border-radius: 50%; overflow: hidden; text-indent: -999px; box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5);}
+.image_slide ul.indicator li.on a {border-color: #4bc1d2; background: #4bc1d2;}
+.image-slide ul.indicator {position: absolute; left: 0; bottom: 15px; width: 100%; text-align: center;}
+.image_slide ul.indicator li {display: inline-block; margin: 0 2px;}
+.image_slide ul.indicator li a {display: block; width: 10px; height: 10px; border: 3px solid #ffffff; border-radius: 50%; overflow: hidden; text-indent: -999px; box-shadow: 1px 1px 3px 0 rgba(0, 0, 0, 0.5);}
+.image_slide ul.indicator li.on a {border-color: #4bc1d2; background: #4bc1d2;}
+
+
+.image_slide p.control a {position: absolute; top: 50%; transform: translateY(-50%);}
+.image_slide p.control a.prev {left: -70px;}
+.image_slide p.control a.next {right: -70px;}

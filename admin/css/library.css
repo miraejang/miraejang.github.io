@@ -1,0 +1,15 @@
+/*reset*/
+body, div, h1, h2, h3, h4, h5, h6, ul, ol, li, p, dl, dt, dd {margin: 0; padding: 0;}
+header, main, footer, section, article, aside, nav {display: block;}
+
+h1, h2, h3, h4, h5, h6 {font-size: 18px; font-weight: normal;}
+li {list-style: none;}
+a {color: inherit; text-decoration: inherit;}
+em, i {font-style: normal; font-weight: inherit;}
+
+body {color: #777;}
+
+header {max-width: 1000px; margin: 20px auto; border-bottom: 3px solid #999;}
+header h1 {font-size: 50px; line-height: 100px; text-align: center;}
+section ul li {float: left; width: 300px; margin: 0 20px; border-radius: 15px; border: 2px solid #999;}
+section ul li a {display: block; line-height: 80px; font-size: 20px; text-align: center;}

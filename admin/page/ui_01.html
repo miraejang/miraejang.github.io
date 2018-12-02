@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>슬라이드</title>
+    <script type="text/javascript" src="../js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="../css/ui_01.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="home"></a>
+        <h1>MIRAE LIBRARY (WEB)</h1>   
+    </header>
+    <section>
+        <div class="image_slide">
+            <ul class="slide">
+                <li><a href="#"><img src="../img/main_visual_01.jpg" alt=""></a></li>
+                <li><a href="#"><img src="../img/main_visual_02.jpg" alt=""></a></li>
+                <li><a href="#"><img src="../img/main_visual_03.jpg" alt=""></a></li>
+                <li><a href="#"><img src="../img/main_visual_04.jpg" alt=""></a></li>
+            </ul>
+            <ul class="indicator">
+                <li class="on"><a href="#">1번 비주얼</a></li>
+                <li><a href="#">2번 비주얼</a></li>
+                <li><a href="#">3번 비주얼</a></li>
+                <li><a href="#">4번 비주얼</a></li>
+            </ul>
+            <p class="control">
+                <a href="#" class="prev"><img src="../img/btn_left.png" alt=""></a>
+                <a href="#" class="next"><img src="../img/btn_right.png" alt=""></a>
+            </p>
+        </div>
+        
+    </section>
+<script>
+'use strict';
+$(document).on('click', 'a[href="#"]', function(e) {
+    e.preventDefault();
+});
+
+var numSlide = $('.image_slide ul.slide li').length;
+    
+$('.image_slide ul.indicator li a').on('click', function() {
+    var index = $('.image_slide ul.indicator li').index($(this).parent());
+    alert(index);
+    $('.image_slide ul.indicator li').removeClass('on');
+    $('.image_slide ul.indicator li:eq('+ (index) +')').addClass('on');
+    showSlide(slideNext)
+});
+
+$('.image_slide p.control a.prev').on('click', function() {
+    showSlide(slidePrev);
+    alert('prev');
+});
+    
+$('.image_slide p.control a.next').on('click', function() {
+    showSlide(slideNext);
+    alert('next');
+});
+    
+function showSlide(n) {
+    $('.image_slide ul.slide li').css({'display': 'none'});
+    $('.image_slide ul.slide li:eq('+ (n + 1) +')').css({'display': 'block'});
+    $('.iamge_slide ul.indicator li').removeClass('on');
+    $('.iamge_slide ul.indicator li:eq('+ (n + 1) +')').addClass('on');
+    slideNow = n;
+    slidePrev = (n - 1) < 1 ? numSlide : (n - 1);
+    slideNext = (n + 1) > numSlide ? 1 : (n + 1);
+}
+    
+</script>
+</body>
+</html>

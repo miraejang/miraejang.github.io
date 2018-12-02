@@ -1,0 +1,259 @@
+/*reset*/
+body, div, h1, h2, h3, h4, h5, h6, ul, ol, li, p, dl, dt, dd {margin: 0; padding: 0;}
+header, main, footer, section, article, aside, nav {display: block;}
+
+
+h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+h2 {font-size: 3.56em; padding-top: 3.4em;}
+li {list-style: none;}
+a {color: inherit; text-decoration: inherit;}
+em, i {font-style: normal; font-weight: inherit;}
+
+body,html {width:100%; height:100%;}
+body {font-family: NanumGothic, sans-serif; color: #333;}
+
+
+
+#header {position: relative; width: 100%;}
+#header .topbar {position: fixed; width: 100%; height: 130px; z-index: 100;}
+#header .topbar h1 a {display: block; position: absolute; top: 50%; transform: translateY(-50%); left: 80px; width: 150px; height: 38px; background: url(../img/head_logo.png) no-repeat; background-size: contain; text-indent: -99999px; transition: all .5s;}
+#header .topbar a.menu {display: block; position: absolute; top: 50%; transform: translateY(-50%); right: 65px; width: 70px; height: 70px; background: url(../img/btn_menu.png) no-repeat; background-size: contain; text-indent: -99999px; transition: all .5s;}
+#header .topbar a.menu.on {background: url(../img/btn_menu_active.png); background-size: contain;}
+#header.scroll-up .topbar {height: 70px; background: #02bbf8;}
+#header.scroll-up .topbar h1 a {height: 31px; left: 30px;}
+#header.scroll-up .topbar a.menu {width: 50px; height: 50px; right: 28px;}
+
+#header .nav {position: fixed; top: 0; z-index: 10;}
+#header .nav:before {content: ''; display: block; background: #000; opacity: 0; transition: all 1s;}
+#header .nav .menu_box {position: fixed; top: 0; right: -620px; width: 620px; height: 100vh; color: #fff; background: #02bbf8; opacity: .9; transition: right 1s;}
+#header .nav .menu_box ul {width: 475px; margin: 100px auto;}
+#header .nav .menu_box ul li a {display: block; width: 100%; line-height: 80px; font-size: 32px;}
+#header .nav .menu_box ul li.list_1 a {background: url(../img/menu_icon_01.png) no-repeat center right; background-size: auto 70%;}
+#header .nav .menu_box ul li.list_2 a {background: url(../img/menu_icon_02.png) no-repeat center right; background-size: auto 70%;}
+#header .nav .menu_box ul li.list_3 a {background: url(../img/menu_icon_03.png) no-repeat center right; background-size: auto 70%;}
+#header .nav .menu_box ul li.list_4 a {background: url(../img/menu_icon_04.png) no-repeat center right; background-size: auto 70%;}
+#header .nav .menu_box ul li.list_5 a {background: url(../img/menu_icon_05.png) no-repeat center right; background-size: auto 70%;}
+#header .nav .menu_box a.close {display: block; width: 90px; height: 90px; transform: rotate(90deg); background: url(../img/btn_top.png) no-repeat; background-size: contain; margin-left: 72.5px; text-indent: -99999px;}
+#header .nav.on:before {width: 100vw; height: 100vh; opacity: .8;}
+#header .nav.on .menu_box {right: 0;}
+
+
+#header .visual {position: relative; width: 100%; height: 1080px; margin: 0 auto;}
+#header .visual:after {content: ''; display: block; position: absolute; top: 50%; right: 90px; transform: translateY(-50%); width: 57px; height: 164px; background: url(../img/main_visual_scroll.png) no-repeat; background-size: cover;}
+#header .visual ul.slide {position: relative; width: 100%; height: 100%;}
+#header .visual ul.slide li {position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: none;}
+#header .visual ul.slide li:first-child {display: block;}
+#header .visual ul.slide li img.bg {width: 100%; height: 100%;}
+#header .visual ul.slide li p {position: absolute; left: -1000px; color: #fff; opacity: 0;}
+#header .visual ul.slide li p.tit {top: 303px; padding-top: 50px; line-height: 1.4em; font-size: 4.06em; background: url('../img/main_visual_squre.png') no-repeat 5px 0px; background-size: 220px 21px; transition: all 1s ease;}
+#header .visual ul.slide li p.txt {top: 606px; line-height: 1.5em; font-size: 1.8em; transition: all 1s ease .5s;}
+#header .visual ul.slide li.on p.tit {left: 150px; opacity: 1;}
+#header .visual ul.slide li.on p.txt {left: 150px; opacity: 1;}
+#header .visual ul.slide li [class^="s1"],
+#header .visual ul.slide li [class^="s2"],
+#header .visual ul.slide li [class^="s3"] {position: absolute;}
+#header .visual ul.slide li .s1_box {width: 680px; height: 459px; top: 257px; left: 1056px;}
+#header .visual ul.slide li .s1_img01 {width: 518px; height: 203px; bottom: px;}
+#header .visual ul.slide li .s1_img_s01 {width: 101px; bottom: 304px; left: 377px; }
+#header .visual ul.slide li .s1_img_s02 {width: 63px; bottom: 289px; left: 288px; animation-delay: .4s;}
+#header .visual ul.slide li .s1_img_s03 {width: 45px; bottom: 223px; left: 340px; animation-delay: .8s;}
+#header .visual ul.slide li .s2_box {width: 495px; height: 738px; top: 0; left: 1093px;}
+#header .visual ul.slide li .s2_img01 {width: 370px; top: 7px; left: 83px;}
+#header .visual ul.slide li .s2_img_s01 {width: 495px; top: 384px;}
+#header .visual ul.slide li .s3_box {width: 465px; height: 483px; top:207px; left: 1122px;}
+#header .visual ul.slide li .s3_img01 {width: 465px; top: 0px; left: 0px; opacity: .5;}
+#header .visual ul.slide li .s3_img_s01 {width: 130px; top: 0px; left: 0px; animation-delay: .1s;}
+#header .visual ul.slide li .s3_img_s02 {width: 266px; top: 62px; right: 0px; animation-delay: .2s;}
+#header .visual ul.slide li .s3_img_s03 {width: 118px; bottom: 0px; right: 15px; animation-delay: .3s;}
+#header .visual ul.slide li .s3_img_s04 {width: 133px; bottom: 47px; left: 0px; animation-delay: .8s;}
+#header .visual ul.indicator {position: absolute; bottom: 3%; width: 100%; text-align: center;}
+#header .visual ul.indicator li {display: inline-block;}
+#header .visual ul.indicator li + li {margin-left: 22px;}
+#header .visual ul.indicator li a {display: block; width: 20px; width: 20px; background: url(../img/b21.png) no-repeat; text-indent: -99999px;}
+#header .visual ul.indicator li a { background-position: -5px -5px;}
+#header .visual ul.indicator li a:hover { background-position: -35px -5px; }
+#header .visual ul.indicator li.on a { background-position: -65px -5px; }
+#header .visual p.control {position: absolute; top: 50%; transform: translateY(-50%); width: 100%;}
+#header .visual p.control a {display: inline-block; width: 50px; height: 60px; background: url(../img/a21.png) no-repeat; text-indent: -99999px;}
+#header .visual p.control a.prev {float: left; margin-left: 10px; background-position: -3px -33px;}
+#header .visual p.control a.next {float: right; margin-right: 10px; background-position: -63px -33px;}
+
+
+
+#main .section1 {width: 100%; padding-bottom: 85px; background: url(../img/main_section1_bg.png) no-repeat bottom center; text-align: center;}
+#main .section1 .wrap {min-width: 1024px; max-width: 1280px; margin: 0 auto;}
+#main .section1 p {margin: 2em 0; font-size: 1.4em; letter-spacing: -0.06em; line-height: 1.65em;}
+#main .section1 a.go {display: block; width: 250px; height: 3.1em; margin: 0 auto; color: #009ad2; line-height: 2.9em; font-size: 1.4em; border: 2px solid #009ad2; vertical-align: middle;}
+#main .section1 a.go span {border-bottom: 1px solid #009ad2;}
+#main .section1 a.go i {display: inline-block; width: 20px; height: 20px; margin-left: 10px; background: url(../img/btn_bullet_arrow.png); vertical-align: middle;}
+#main .section1 a.go:hover {color: #00759f; border-color: #00759f;}
+#main .section1 a.go:hover span {border-bottom: 1px solid #00759f;}
+#main .section1 ul {margin-top: 10em; color: #fff; overflow: hidden;}
+#main .section1 ul li {float: left; width: 33.33%; font-size: 1.35em; line-height: 1.7em;}
+#main .section1 ul li.list_1 {background: url(../img/main_section1_icon01.png) no-repeat top center;}
+#main .section1 ul li.list_2 {margin-top: 90px; background: url(../img/main_section1_icon02.png) no-repeat top center;}
+#main .section1 ul li.list_3 {margin-top: 180px; background: url(../img/main_section1_icon03.png) no-repeat top center;}
+#main .section1 ul li span {display: block;}
+#main .section1 ul li .tit {padding: 130px 0 25px 0; font-size: 2.2em;}
+#main .section1 ul li .tit em {color: #3f4140; font-weight: bold;}
+#main .section1 ul.scroll-show li {animation: bounceIn 0.75s; animation-fill-mode: both;}
+#main .section1 ul.scroll-show li:first-child {animation-delay: 0s;}
+#main .section1 ul.scroll-show li:nth-child(2) {animation-delay: .2s;}
+#main .section1 ul.scroll-show li:last-child {animation-delay: .4s;}
+
+#main .section2 {width: 100%; overflow: hidden;}
+#main .section2 ul {width: 100%;}
+#main .section2 ul li {position: relative; float: left; width: 50%; height: 25em; letter-spacing: -0.06em;}
+#main .section2 ul li a {display: block; width: 100%; height: 100%; background-size: cover;}
+#main .section2 ul li.list_1 a {color: #fff; background: url(../img/main_section2_img01.jpg) no-repeat;}
+#main .section2 ul li.list_2 a {background: url(../img/main_section2_img02.jpg) no-repeat;}
+#main .section2 ul li.list_3 a {background: url(../img/main_section2_img03.jpg) no-repeat;}
+#main .section2 ul li.list_4 a {color: #fff; background: url(../img/main_section2_img04.jpg) no-repeat;}
+#main .section2 ul li.list_1 a .tit,
+#main .section2 ul li.list_4 a .tit {background: url(../img/bullet_arrow_w.png) no-repeat bottom right;}
+#main .section2 ul li.list_2 a .tit,
+#main .section2 ul li.list_3 a .tit {background: url(../img/bullet_arrow_b.png) no-repeat bottom right;}
+#main .section2 ul li a .tit {position: absolute; top: 70px; right: 70px; padding-bottom: 56px; line-height: 1.3em; font-size: 2.2em; font-weight: bold; text-align: right; text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);}
+#main .section2 ul li a .txt {position: absolute; bottom: 0; left: 0; width: 100%; height: 106px; opacity: 0; transition: opacity 1s;}
+#main .section2 ul li a .txt:before {content: ''; position: absolute; left: 0; display: block; width: 100%; height: 100%; background: #fff; opacity: .6;}
+#main .section2 ul li a .txt span {position: absolute; top: 50%; left: 40px; transform: translateY(-50%); padding: 0 40px; line-height: 1.4em; font-size: 1.2em; color: #000; }
+#main .section2 ul li a:hover {animation: zoomIn 2s;}
+#main .section2 ul li a:hover:after {content: ''; position: absolute; display: block; width: 100%; height: 100%; border: 15px solid #00a9e5; box-sizing: border-box;}
+#main .section2 ul li a:hover .txt {opacity: 1;}
+
+#main .section3 {width: 100%; padding-bottom: 120px; background: #efeff1; text-align: center;}
+#main .section3 .wrap {min-width: 1024px; max-width: 1280px; margin: 0 auto;}
+#main .section3 p {margin: 2em 0; font-size: 1.4em; letter-spacing: -0.06em; line-height: 1.65em;}
+#main .section3 ul {color: #fff;}
+#main .section3 ul:after {content: ''; display: block; clear: both;}
+#main .section3 ul li {float: left; width: 33.33%;}
+#main .section3 ul li a {position: relative; display: inline-block; width: 300px; height: 300px; text-align: center; border-radius: 100%;}
+#main .section3 ul li.list_1 a {background: url(../img/main_section3_img01.png) no-repeat center center; background-size: contain;}
+#main .section3 ul li.list_2 a {background: url(../img/main_section3_img02.png) no-repeat center center;}
+#main .section3 ul li.list_3 a {background: url(../img/main_section3_img03.png) no-repeat center center;}
+#main .section3 ul li a:before {opacity: .85; border-radius: 100%;}
+#main .section3 ul li:nth-child(odd) a:before {content: ''; display: block; width: 300px; height: 300px; background: #0f868c;}
+#main .section3 ul li:nth-child(even) a:before {content: ''; display: block; width: 300px; height: 300px; background: #000;}
+#main .section3 ul li a span{position: absolute; left: 50%; transform: translateX(-50%); width: 100%;}
+#main .section3 ul li a .tit {position: absolute; top: 0px; margin-top: 90px; font-size: 1.64em;}
+#main .section3 ul li a .txt {position: absolute; top: 60px; margin-top: 90px; line-height: 1.4em; font-size: 1.2em; opacity: .8;}
+#main .section3 ul.scroll-show li {animation: bounceIn .75s; animation-fill-mode: both;}
+#main .section3 ul.scroll-show li:first-child {animation-delay: 0s;}
+#main .section3 ul.scroll-show li:nth-child(2) {animation-delay: .2s;}
+#main .section3 ul.scroll-show li:last-child {animation-delay: .4s;}
+
+#footer {background: url(../img/footer_bg.jpg); font-size: 16px;}
+#footer .wrap {min-width: 1024px; max-width: 1280px; margin: 0 auto; padding: 80px 0;}
+#footer ul {margin-left: 60px; color: #fff; font-weight: bold; overflow: hidden;}
+#footer ul li {float: left;}
+#footer ul li + li:before {content: ''; display: inline-block; width: 4px; height: 4px; margin: 0 17px; background: url(../img/bullet_00.png); vertical-align: middle;}
+#footer .copyright {margin: 60px; line-height: 1.4em; color: #939393;}
+#footer .copyright p {margin-bottom: 16px;}
+#footer a.goTop {display: block; position: fixed; bottom: 40px; right: 50px; width: 90px; height: 90px; background: url(../img/btn_top.png) no-repeat; background-size: contain; opacity: .5; z-index: 1;}
+
+
+/*keyframes*/
+@keyframes bounceIn {
+  0%, 20%, 40%, 60%, 80%, 100% {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+  }
+
+  20% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1);
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    -webkit-transform: scale3d(.9, .9, .9);
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    -webkit-transform: scale3d(.97, .97, .97);
+    transform: scale3d(.97, .97, .97);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes zoomIn {
+    from {background-size: 70%; background-position: center center;}
+    to {background-size: 100%; background-position: center center;}
+}
+
+@media screen and (max-width: 1440px) {
+    #header .visual {width: 1440px; height: 810px;}
+    #header .visual ul.slide {}
+    #header .visual ul.slide li img.bg {width: 1440px; height: 810px;}
+    .section3 ul li a {width: 240px; height: 240px;}
+    .section3 ul li a:before {width: 240px; height: 240px;}
+}
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+
+.wrap {min-width: 1024px; max-width: 1280px; margin: 0 auto; text-align: center; overflow: hidden;}
+
+#header .sub_visual {width: 100%; height: 550px; color: #fff; text-align: center; background: url(../img/sub_visual_01.jpg) no-repeat;}
+#header .sub_visual h2 {width: 100%;}
+
+.sub_menu {width: 100%; height: 100px; background: #f8f8f8; border-bottom: 1px solid #bfbfbf;}
+
+.sub_menu ul {width: 100%; text-align: center;}
+.sub_menu ul li a {float: left; width: 25%; line-height: 100px; font-size: 1.52em; border-left: 1px solid #bfbfbf; box-sizing: border-box;}
+.sub_menu ul li:last-child a {border-right: 1px solid #bfbfbf;}
+.sub_menu ul li.on a {background: #fff; color: #019ed3;}
+
+#intro {letter-spacing: -0.06em}
+#intro .section1 {padding-bottom: 130px;}
+#intro .section1 strong {display: block; font-size: 3.56em; margin-top: 3.2em; font-weight: normal;}
+#intro .section1 p {margin-top: 2em;}
+#intro .section2 {padding: 140px 0;color: #fff; background: #02bbf8;}
+#intro .section2 img{width: 80%; margin: 0 auto;}
+
+#intro .section2 h3 {text-align: left;}
+#intro .section2 p {text-align: left;}
+
+
+
+h3 {font-size: 2.6em; letter-spacing: -0.05em; margin-bottom: 40px; padding-left: 50px;}
+p {font-size: 1.4em; line-height: 1.6em; margin-bottom: 50px; padding-left: 50px;}
+
+#intro .section3 {padding: 140px 0; color: #fff; background: #199b8d;}
+#intro .section3 h3 {text-align: left;}
+#intro .section3 p {text-align: left;}
+
+#intro .section3  ul.year {overflow: hidden;}
+#intro .section3  ul.year > li {float: left; width: 33.33%; margin: 60px 0;}
+#intro .section3  ul.year > li > span {display: block; width: 90%; line-height: 200px; margin: 0 auto; font-size: 2.8em; font-weight: bold;}
+#intro .section3  ul.year > li > strong {display: block; width: 90%; margin: 60px auto 0; font-size: 1.8em; text-align: left;}
+#intro .section3  ul.year > li > ul {width: 90%; margin: 40px auto 0; font-size: 1.2em; line-height: 1.4em; letter-spacing: -0.06em; text-align: left;}
+#intro .section3  ul.year > li > ul > li {margin-bottom: 10px;}
+#intro .section3  ul.year > li > ul > li > em {float: left; font-weight: bold;}
+#intro .section3  ul.year > li > ul > li > .txt {display: block; margin-left: 55px;}
+
+#intro .section3  ul.year > li.list_1 > span {background: url(../img/sub01_section03_img06.jpg);}
+#intro .section3  ul.year > li.list_2 > span {background: url(../img/sub01_section03_img05.jpg);}
+#intro .section3  ul.year > li.list_3 > span {background: url(../img/sub01_section03_img04.jpg);}
+#intro .section3  ul.year > li.list_4 > span {background: url(../img/sub01_section03_img03.jpg);}
+#intro .section3  ul.year > li.list_5 > span {background: url(../img/sub01_section03_img02.jpg);}
+#intro .section3  ul.year > li.list_6 > span {background: url(../img/sub01_section03_img01.jpg);}

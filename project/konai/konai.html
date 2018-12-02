@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>코나아이</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <link rel="stylesheet" href="css/kona.css" />    
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/kona.js"></script>
+</head>
+<body>
+    <header id="header">
+        <h1 class="logo">
+            <a href="#">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120 27" style="enable-background:new 0 0 120 27;" xml:space="preserve">
+                    <g>
+                        <g>
+                            <path d="M78.8,24.5L91.2,1.6l12.3,22.9h-5.2l-7.1-14.1L84,24.5H78.8z M70.8,24.5V6.3H57.6v18.2H53V2.2h22.3v22.3H70.8z M44.4,13.4
+                                c0-4.6-3.5-8.3-7.9-8.3c-4.4,0-7.9,3.7-7.9,8.3c0,4.6,3.5,8.4,7.9,8.4C40.9,21.8,44.4,18,44.4,13.4 M48.8,13.4
+                                c0,6.7-5.6,12.3-12.4,12.3s-12.4-5.5-12.4-12.3c0-6.7,5.6-12.3,12.4-12.3S48.8,6.6,48.8,13.4 M5.5,13.3L16.8,2.2h5.7L11.2,13.3
+                                l12.1,11.2h-5.9L5.5,13.3z M1,2.2h4.5v22.3H1V2.2z"/>
+                        </g>
+                        <rect x="114.7" y="2.2" width="4.5" height="22.3"/>
+                    </g>
+                </svg>
+            </a>
+        </h1>
+        <ul class="gnb">
+            <li><a href="#">Our Company</a>
+                <ul>
+					<li><a href="/company/ceo_message">CEO 메시지</a></li>
+					<li><a href="/company/system">회사소개</a></li>
+					<li><a href="/company/history">연혁</a></li>
+					<li><a href="/company/global_network">글로벌 네트워크</a></li>
+					<li><a href="/company/ci">CI</a></li>
+					<li><a href="/company/location">오시는길</a></li>
+				</ul>
+            </li>
+            <li><a href="#">Our Business</a>
+                <ul>
+					<li><a href="#">스마트카드 &amp; COS</a>
+						<ul>
+							<li><a href="/business/cards/bank_solution">금융 솔루션</a></li>
+							<li><a href="/business/cards/doncard">Do N카드</a></li>
+							<li><a href="/business/cards/kona_platform">KONA 플랫폼</a></li>
+							<li><a href="/business/cards/card">카드</a></li>
+							<li><a href="/business/cards/communication">통신</a></li>
+							<li><a href="/business/cards/multi_usim">멀티유심</a></li>
+						</ul>
+					</li>
+					<li><a href="#">보안서비스 &amp; 솔루션</a>
+						<ul>
+							<li><a href="/business/security/public">Public / ID</a></li>
+							<li><a href="/business/security/cps">CPS / SCMS / TSM</a></li>
+							<li><a href="/business/security/k_css">K-CSS</a></li>
+							<li><a href="/business/security/auth">코나 인증 서비스</a></li>
+							<li><a href="/business/security/fido">FIDO U2F</a></li>
+							<li><a href="/business/security/pki">PKI</a></li>
+						</ul>
+					</li>
+					<li><a href="#">IoT 플랫폼 서비스</a>
+						<ul>
+							<li><a href="/business/iot/kona_dm_fota">KONA DM &amp; FOTA</a></li>
+							<li><a href="/business/iot/home_iot">HOME IoT</a></li>
+							<li><a href="/business/iot/platform">KONA Things Platform</a></li>
+						</ul>
+					</li>
+					<li><a href="#">핀테크 &amp; 플랫폼 서비스</a>
+						<ul>
+							<li><a href="/business/fintech/kona_card">KONA카드</a></li>
+							<li><a href="/business/fintech/veaver">비버</a></li>
+						</ul>
+					</li>
+				</ul>
+            </li>
+            <li><a href="#">IR</a>
+                <ul>
+					<li><a href="/ir/juga">주가정보</a></li>
+					<li><a href="/ir/gongsi">공시정보</a></li>
+					<li><a href="/ir/jaemu">재무정보</a></li>
+					<li><a href="/ir/board">IR게시판</a></li>
+				</ul>
+            </li>
+            <li><a href="#">PR</a>
+                <ul>
+					<li><a href="/pr/report">보도자료</a></li>
+					<li><a href="/pr/video">광고·홍보영상</a></li>
+				</ul>
+            </li>
+            <li><a href="#">Recruit</a>
+                <ul>
+					<li><a href="/recruit/talented">인재상</a></li>
+					<li><a href="/recruit/welfare">복리후생제도</a></li>
+					<li><a href="/recruit/promotion">보상제도</a></li>
+					<li><a href="/recruit/process">전형절차</a></li>
+					<li><a href="/recruit/employment">채용소식</a></li>
+					<li><a href="/recruit/faq">FAQ</a></li>
+				</ul>
+            </li>
+        </ul>
+        <ul class="lang">
+            <li><a href="#">KR
+                   <!--
+                    <svg viewBox="2154.216 131.6 8.1 4.6">
+                        <g transform="translate(1716.69 126)"><path d="M-1336.5,1100.2h8.1l-4,4.6Z" transform="translate(1774.026 -1094.6)"></path></g>
+                    </svg>
+                    -->
+                </a></li>
+            <li><a href="#">EN</a></li>
+        </ul>
+    </header>
+    <section id="main">
+       <div class="visual">
+            <ul class="slide">
+                <li class="slide1">
+                    <img class="chip" src="img/mv00_0.png" alt="chip"/>
+                    <img class="phone" src="img/mv00_1.png" alt="phone"/>
+                    <img class="card" src="img/mv00_2.png" alt="card"/>
+                    <img class="usim" src="img/mv00_3.png" alt="usim"/>
+                    <img class="hand" src="img/mv00_4.png" alt="hand"/>
+                </li>
+                <li class="slide2">
+                    <img class="cards" src="img/mv01_cards.png" alt="cards">
+                    <img class="cactus" src="img/mv01_cactus.png" alt="cactus">
+                    <img class="keyboard" src="img/mv01_keyboard.png" alt="keyboard">
+                    <img class="speaker" src="img/mv01_speaker.png" alt="speaker">
+                    <img class="phone" src="img/mv01_phone.png" alt="phone">
+                    <img class="display" src="img/mv01_display.png" alt="display">
+                    <div class="text">
+                        <p class="tit">생활에<br>Identity를<br>더하다</p>
+                        <div class="line"></div>
+                        <p class="txt">우리 생활을<br>더 편리하고<br>스마트하게,<br>코나아이는 생활의<br>혁신을 추구합니다.</p>
+                    </div>
+                </li>
+                <li class="slide3">
+                    <div class="card_box">
+                        <img class="card" src="img/mv02_card.png" alt="card">
+                        <img class="fingerprint" src="img/mv02_fingerprint.png" alt="fingerprint">
+                    </div>
+                    <img class="sand" src="img/mv02_sand.png" alt="sand">
+                    <div class="text">
+                        <p class="tit">기술에<br>Identity를<br>더하다</p>
+                        <div class="line"></div>
+                        <p class="txt">스마트카드부터<br>플랫폼까지<br>코나아이의<br>기술 혁신은<br>계속됩니다.</p>
+                    </div>
+                </li>
+                <li class="slide4">
+                    <img class="phone" src="img/mv03_phone.png" alt="phone">
+                    <img class="screen" src="img/mv03_screen.png" alt="screen">
+                    <img class="circle" src="img/mv03_circle.png" alt="circle">
+                    <img class="objects" src="img/mv03_objects.png" alt="objects">
+                    <div class="text">
+                        <p class="tit">정보에<br>Identity를<br>더하다</p>
+                        <div class="line"></div>
+                        <p class="txt">소중한 지식과<br>정보를<br>안전하게 관리하고<br>편리하게<br>공유할 수 있습니다.</p>
+                    </div>					
+                </li>
+            </ul>
+            <ul class="indicator">
+                <li><a href="#">1번 이미지</a></li>
+                <li><a href="#">2번 이미지</a></li>
+                <li><a href="#">3번 이미지</a></li>
+                <li><a href="#">4번 이미지</a></li>
+            </ul>
+            <p class="control">
+                <a href="#" class="prev">PREV</a>
+                <a href="#" class="next">NEXT</a>
+            </p>
+            <div class="cover">
+                <p class="text">
+                    <span class="tit">안전하고 편리한 생활을 위한</span>
+                    <span class="txt">Digital Identity</span>
+                </p>
+            </div>
+        </div>
+        <div class="business">
+            <h2>Our Business</h2>
+            <ul class="contents">
+                <li class="smart">
+                    <a href="#"><span>Smart Card &<br />COS</span></a>
+                    <div>
+                        <p>Smart Card & COS : 금융솔루션, Do N카드,<br />KONA 플랫폼, 카드, 통신, 멀티유심</p>    
+                    </div>
+                </li>
+                <li class="security">
+                    <a href="#"><span>Security & Authentication</span></a>
+                    <div>
+                        <p>Security &amp; Authentication : Public / ID,<br />CPS / SCMS / TSM, K-CSS, 코나인증서비스,<br />FIDO U2F, PKI</p>
+                    </div>
+                </li>
+                <li class="platform">
+                    <a href="#"><span>IoT Platform</span></a>
+                    <div>
+                        <p>IoT & Platform : KONA DM & FOTA, HOME IoT, KONA Things Platform</p>
+                    </div>
+                </li>           
+            </ul>
+            <ul class="banner">
+                <li class="card">
+                    <a href="#">
+                        <p><em>KONA CARD</em> I am the first</p>
+                        <div class="img">
+                            <img src="img/ob2_card.png" />
+                            <img src="img/ob2_card_hover.png" class="hover"/>
+                        </div>
+                    </a>
+                    
+                </li>
+                <li class="veaver">
+                    <a href="#">
+                        <p><em>Veaver</em>Video streaming Service</p>
+                        <div class="img">
+                            <img src="img/ob2_phone.png" />
+                            <img src="img/ob2_phone_hover.png" class="hover"/>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="value">
+            <div class="tit">
+                <h2>코나아이 Value</h2>
+                <p>디지털 전자서명의<br />역사를 쓰다</p>
+            </div>            
+            <ul class="info">
+                <li class="info_1">
+                    <a href="#">
+                        <p class="txt">투자정보</p>
+                        <p class="num">
+                            <span class="num1">18,000</span>
+                            <span class="num2">550 (+3.15%)</span>                            
+                        </p>
+                    </a>
+                    <div class="side">
+                        <p>
+                           종이의 발명 이후 인쇄기술이 오랜 기간 인류의 발전과 역사에 큰 기여를 하고 있듯이<br />
+                           반도체가 존재하는 한 코나아이의 암호화 기술은 우리 삶에 끊임없는 혁신과<br />
+                           도전을 가능하게 할 것입니다.
+                            <a href="#"><span>더보기</span><img src="img/MWC_more.png" /></a>
+                        </p>
+                    </div>
+                </li>
+                <li class="info_2">
+                    <a href="#">
+                        <span>
+                            <em>코나의 내일을 보다</em>
+                            <i class="row1">코나아이</i>
+                            <i class="row2">바른</i>
+                            <i class="row3">인재상</i>
+                        </span>
+                    </a>
+                </li>
+                <li class="info_3"><p>2017<br />Kona Global<br />Recruitment</p></li>
+                <li class="info_4"><a href="#"><span>진행중인<br />채용공고</span></a></li>
+                <li class="info_5"><a href="#"><span>2017 코나아이<br />e-brochure</span></a></li>
+                <li class="info_6"><a href="#"><span>코나아이, 카카오뱅크 체크카드에 IC 운영체제…</span></a></li>
+                <li class="info_7"><a href="#"><span>카드 디자인의 중심<br />코나 DESIGN LAB</span></a></li>
+                <li class="info_8"><a href="#"><span>2017 MWC 상해<br />의미있는 성과</span></a></li>
+            </ul>
+        </div>
+        <div class="story">
+            <h2># Kona Story's</h2>
+            <ul>
+                <li class="s"><a href="#"><p>#코나에스</p></a></li>
+                <li class="art"><a href="#"><p>#아트마이닝</p></a></li>
+                <li class="m"><a href="#"><p>#코나엠</p></a></li>
+                <li class="konacard"><a href="#"><p>#코나카드</p></a></li>
+                <li class="veaver"><a href="#"><p>#비버</p></a></li>
+            </ul>
+
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="inner">
+            <ul class="util">
+                <li><a href="#">개인정보보호 취급방침</a></li>
+                <li><a href="#">이메일 무단수집 거부</a></li>
+                <li><a href="#">영상정보처리기기 운영관리 방침</a></li>
+            </ul>
+            <ul class="site">
+                <li><a href="#">통합 브로슈어<span class="plus"><i class="horizon"></i><i class="vertical"></i></span></a></li>
+                <li><a href="#">Family Site</a></li>
+            </ul>
+            <div class="info">
+                <p class="address">서울 영등포구 은행로 3 익스콘벤처타워 (8층)</p>
+                <p class="call">대표번호 : 02 - 2168 - 7500 / FAX : 02 - 769 - 1670</p>
+            </div>
+            <p class="copyright">Copyright ⓒKona I All rights reserved</p>
+        </div>
+    </footer>    
+<script>
+
+       
+    
+    
+</script>   
+</body>
+</html>
