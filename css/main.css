@@ -2592,6 +2592,27 @@ html.no-csstransitions .home-content__main {
 }
 
 
+/* ===================================================================
+ * # footer
+ * ------------------------------------------------------------------- */
+
+#footer {
+    height: 250px;
+    padding-top: 50px;
+    background: #f0e6dd;
+}
+
+#footer p {
+    font-size: 5.5rem;
+    text-align: center;
+}
+
+#footer img {
+    float: right;
+    width: 80px;
+    margin-right: 50px;
+}
+
 
 
 /* ------------------------------------------------------------------- 
@@ -2677,23 +2698,3 @@ html.no-csstransitions .home-content__main {
 }
 
 
-/* ===================================================================
- * # footer
- * ------------------------------------------------------------------- */
-
-#footer {
-    height: 250px;
-    padding-top: 50px;
-    background: #f0e6dd;
-}
-
-#footer p {
-    font-size: 5.5rem;
-    text-align: center;
-}
-
-#footer img {
-    float: right;
-    width: 80px;
-    margin-right: 50px;
-}
