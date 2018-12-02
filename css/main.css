@@ -2592,29 +2592,6 @@ html.no-csstransitions .home-content__main {
 }
 
 
-/* ===================================================================
- * # footer
- * ------------------------------------------------------------------- */
-
-#footer {
-    height: 250px;
-    padding-top: 50px;
-    background: #f0e6dd;
-}
-
-#footer p {
-    font-size: 5.5rem;
-    text-align: center;
-}
-
-#footer img {
-    float: right;
-    width: 80px;
-    margin-right: 50px;
-}
-
-
-
 /* ------------------------------------------------------------------- 
  * responsive:
  * works
@@ -2666,6 +2643,7 @@ html.no-csstransitions .home-content__main {
     .works-content .img img {
         width: 460px; height: 360px;
     }
+}
 
 @media only screen and (max-width: 600px) {
     .s-services {
@@ -2696,5 +2674,33 @@ html.no-csstransitions .home-content__main {
         font-size: 2.5rem;
     }
 }
+
+/* ===================================================================
+ * # footer
+ * ------------------------------------------------------------------- */
+
+#footer {
+    height: 250px;
+    padding-top: 50px;
+    background: #f0e6dd;
+}
+
+#footer p {
+    font-size: 5.5rem;
+    text-align: center;
+}
+
+#footer img {
+    float: right;
+    width: 80px;
+    margin-right: 50px;
+}
+
+
+
+
+
+
+
 
 
