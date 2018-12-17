@@ -2513,9 +2513,6 @@ html.no-csstransitions .home-content__main {
     margin-top: 100px;
 }
 
-
-.works-content .img {border: 1px solid #ccc;}
-
 .works-content .txt h3 span {
     margin-left: 10px;
     font-size: 30px;
@@ -2530,10 +2527,11 @@ html.no-csstransitions .home-content__main {
 }
 
 .works-content .img {
-    float: left;
-    width: 600px;
-    height: 500px;
-    padding: 30px;
+    padding: 25px 30px;    
+}
+
+.works-content .img img {
+    border: 1px solid #ccc; box-sizing: border-box;
 }
 
 .works-content .txt {
