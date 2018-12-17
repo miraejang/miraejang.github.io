@@ -2487,8 +2487,14 @@ html.no-csstransitions .home-content__main {
 }
 
 .s-works .intro-wrap {
+    position: relative;
     padding: 100px 0 200px 0;
     background: #201a11;
+}
+
+.s-works .intro-wrap .col-full p {
+    position: absolute;
+    bottom: 150px;
 }
 
 .works-content-wrap {
