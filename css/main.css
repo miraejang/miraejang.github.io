@@ -2494,11 +2494,13 @@ html.no-csstransitions .home-content__main {
 
 .s-works .intro-wrap .col-full p {
     position: absolute;
-    bottom: 150px;
+    width: 100%;
+    bottom: -100px;
 }
 
 .works-content-wrap {
     width: 100%;
+    margin-top: 80px;
 }
 
 .works-content {
