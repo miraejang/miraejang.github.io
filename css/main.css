@@ -2530,6 +2530,10 @@ html.no-csstransitions .home-content__main {
     padding: 25px 30px;    
 }
 
+.works-content .img img {
+    border: 1px solid #ccc; box-sizing: border-box;
+}
+
 .works-content .txt {
     position: relative;
     padding: 40px;
