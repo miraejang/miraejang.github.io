@@ -21,22 +21,22 @@
 
     <!-- CSS
     ================================================== -->
-    <link rel="stylesheet" href="/css/base.css">
-    <link rel="stylesheet" href="/css/vendor.css">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-
     B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <!-- script
     ================================================== -->
-    <script src="/js/modernizr.js"></script>
-    <script src="/js/pace.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
 
     <!-- favicons
     ================================================== -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+<!--    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
 </head>
 
@@ -47,8 +47,8 @@
     <header class="s-header">
 
         <div class="header-logo">
-            <a class="site-logo" href="/index.html">
-                <img src="/images/mirae_logo.png" alt="Homepage">
+            <a class="site-logo" href="index.html">
+                <img src="images/mirae_logo.png" alt="Homepage">
             </a>
         </div>
 
@@ -82,7 +82,7 @@
 
     <!-- home
     ================================================== -->
-    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="/images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    <section id="home" class="s-home target-section" data-parallax="scroll" data-image-src="images/hero-bg.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
 
         <div class="overlay"></div>
         <div class="shadow-overlay"></div>
@@ -91,7 +91,7 @@
 
             <div class="row home-content__main">
 
-                <h3>WELCOME</h3>
+                <h3><span id="date"></span>의 포트폴리오를 확인해보세요!</h3>
 
                 <h1>
                     JANG MIRAE<br />
@@ -264,7 +264,7 @@
 
         <div class="works-content-wrap">
             <div class="works-content portfolio1">
-                <div class="img" data-aos="fade-down"><img src="/images/portfolio/caihong.jpg" /></div>
+                <div class="img" data-aos="fade-down"><img src="images/portfolio/caihong.jpg" /></div>
                 <div class="txt" data-aos="fade-up">
                     <h3>차이홍<span>caihong</span></h3>
                     <p><em>viewport</em>반응형</p>
@@ -280,7 +280,7 @@
                 </div>
             </div>
             <div class="works-content portfolio2">
-                <div class="img" data-aos="fade-right"><img src="/images/portfolio/konai.jpg" /></div>
+                <div class="img" data-aos="fade-right"><img src="images/portfolio/konai.jpg" /></div>
                 <div class="txt" data-aos="fade-left">
                     <h3>코나아이<span>kona i</span></h3>
                     <p><em>viewport</em>PC형</p>
@@ -293,7 +293,7 @@
                 </div>
             </div>
             <div class="works-content portfolio3">
-                <div class="img" data-aos="flip-up"><img src="/images/portfolio/ncomz.jpg" /></div>
+                <div class="img" data-aos="flip-up"><img src="images/portfolio/ncomz.jpg" /></div>
                 <div class="txt" data-aos="flip-down">
                     <h3>엔컴즈<span>ncomz</span></h3>
                     <p><em>viewport</em>PC형</p>
@@ -306,7 +306,7 @@
                 </div>
             </div>
             <div class="works-content portfolio4">
-                <div class="img" data-aos="flip-left"><img src="/images/portfolio/admin.jpg" /></div>
+                <div class="img" data-aos="flip-left"><img src="images/portfolio/admin.jpg" /></div>
                 <div class="txt" data-aos="flip-right">
                     <h3>관리자페이지<br /><span>administrator page</span></h3>
                     <p><em>viewport</em>PC형</p>
@@ -325,16 +325,27 @@
     </section> <!-- end s-works -->
     <footer id="footer">
         <p>감사합니다</p>
-        <img src="/images/mirae_logo-footer.png" alt="">
+        <img src="images/mirae_logo-footer.png" alt="">
     </footer>
     
 
 
     <!-- Java Script
     ================================================== -->
-    <script src="/js/jquery-3.2.1.min.js"></script>
-    <script src="/js/plugins.js"></script>
-    <script src="/js/main.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        getDate();
+        function getDate(){
+            var result = "";
+            var year = new Date().getFullYear();
+            var month = new Date().getMonth() + 1; //getMonth 메서드는 (0부터 1월을 나타냅니다.)
+            var day = new Date().getDate();
+            result = year + '년 ' + month + '월 ' + day + '일';
+            document.getElementById('date').innerHTML = result;
+        }
+    </script>
 
 </body>
 
