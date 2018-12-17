@@ -2513,6 +2513,9 @@ html.no-csstransitions .home-content__main {
     margin-top: 100px;
 }
 
+
+.works-content .img {border: 1px solid #ccc;}
+
 .works-content .txt h3 span {
     margin-left: 10px;
     font-size: 30px;
