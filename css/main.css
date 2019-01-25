@@ -2190,6 +2190,18 @@ html.no-csstransitions .home-content__main {
     max-width: 1024px;
 }
 
+.about-desc .blog {
+    opacity: .7;
+}
+
+.about-desc .blog a {
+    margin-left: 20px; 
+    padding: 5px 15px; 
+    color: #fff; 
+    border: 1px solid #fff; 
+    opacity: .7;
+}
+
 
 /* ------------------------------------------------------------------- 
  * ## about stats
